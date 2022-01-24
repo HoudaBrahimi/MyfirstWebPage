@@ -1,0 +1,269 @@
+ header
+{
+    
+    text-align:center;
+    font-size: 25px;
+    font-style: italic;
+    color: #34495E;
+    font-family: sans-serif serif arial ;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-shadow: 6px 6px 15px  #85929e62;
+   
+} 
+nav
+{
+    background-color:#FCF3CF;
+}
+nav:after
+{
+    content: '';
+     clear:both; 
+    display: table;
+}
+
+nav ul
+{
+ float: right;
+ margin-right: 40px;
+ list-style: none;
+ position: relative;
+ border: 2px solid #882f5a;
+ padding: 0px;
+
+}
+nav ul li
+{
+    display: inline-block;
+    background: #FCF3CF;
+    margin: 0px 5px;
+  
+     
+}
+nav ul li a 
+{
+    color:#882f5a;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav ul li a:hover
+{
+    color:#34495E;
+}
+nav ul ul 
+{
+     position: absolute;
+     top: 90px;
+     opacity: 0;
+     visibility: hidden;
+     transition: top .3s;
+     
+}
+nav ul li:hover > ul 
+{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li
+{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0, 3);
+
+}
+nav ul ul li a
+{
+line-height: 50px;
+}
+.show,input
+{
+display:none;
+}
+
+
+
+aside
+{
+    
+    position: relative;
+    border: 2px #882f5a solid;
+    border-radius: 15px 50px;
+    box-shadow: 0px 2px 5px #ce9bcb;
+    padding-left:auto;
+    color: black;
+    font-size: 20px;
+    margin-right:1100px;
+    
+
+}
+aside li 
+{
+    color: #882f5a;
+}
+aside span 
+{
+    color: black ;
+}
+
+body
+{
+	background-color: #FCF3CF ;
+    overflow-x: scroll;
+	
+   
+}
+h2
+{
+    color :#34495E ;
+    text-align:left;
+    font-size: 27px;
+    font-style: italic;
+    margin: auto;
+    text-shadow: 6px 6px 15px  #85929E;
+}
+
+table th
+{
+    color: #882f5a;
+    text-align: justify; 
+     font-size: 23px;
+     text-shadow: 6px 6px 15px  #33152e55;
+ 
+     
+}
+table td
+{
+    
+  border:2px solid #882f5a;
+  border-radius: 15px 50px;
+  padding: 15px 10px ;
+  font-size: 20px;
+   
+}     
+ol, ul, footer
+{
+    font-family: sans-serif serif arial ;
+    font-size: 20px;
+
+}
+
+
+
+figure
+{
+    width: auto;
+    height: auto; 
+    float: right;
+   margin:auto;
+   padding: auto;
+  
+        
+}
+
+
+img:hover 
+{
+    opacity:0.8;
+}
+footer span 
+{
+    font-size:small;
+}
+
+
+@media all and (max-width:1024px)
+{
+    
+nav ul 
+{
+    margin-right: 0px;
+    float: left;
+}
+nav .logo
+{
+    padding-left: 30px;
+    width: 100px;
+}
+.show +a, ul
+{
+    display: none;
+}
+nav ul li, nav ul ul li 
+{
+    display: block;
+    width: 100px;
+
+}
+.show
+{
+    display: block;
+    color: #882f5a;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.show:hover
+{
+    color:#ce9bcb;
+}
+nav ul ul 
+{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul a 
+{
+    padding-left: 40px;
+}
+[id=btn]:checked+ ul
+{
+    display: block;
+
+}
+nav ul ul li 
+{
+    border-bottom: 0px;
+}
+
+
+aside
+
+{
+    
+    padding: auto ;
+	scroll-margin-right: auto;
+    border: auto #882f5a solid;
+    
+    
+}    
+   
+figure
+{
+    
+    width:auto;
+    height: auto; 
+    float: right;
+    padding:auto;
+        
+}
+    
+    
+}
